@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:
+          url: jdbc:mysql://192.168.92.128:3307/address?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+          username: root
+          password: root
+        slave:
+          url: jdbc:mysql://192.168.92.128:3307/address?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+          username: root
+          password: root
+
+logging:
+  level:
+    com.feng.address: debug
+  config: classpath:logback-spring-dev.xml

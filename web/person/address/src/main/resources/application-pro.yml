@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    dynamic:
+      primary: master
+      strict: false
+      datasource:
+        master:
+          url: jdbc:mysql://mysql-master/information?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+          username: root
+          password: root
+        slave:
+          url: jdbc:mysql://mysql-slave/information?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+          username: root
+          password: root
+
+logging:
+  config: classpath:logback-spring-pro.xml
+
+
