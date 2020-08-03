@@ -14,7 +14,7 @@
             FILE-ERROR:对应error级别,包含错误信息
     -->
     <contextName>address</contextName>
-    <property name="LOG_PATH" value="F:/千锋/part3/week3/logs/address"/>
+    <property name="LOG_PATH" value="F:/千锋/part3/week3/springboot整合/logs/address"/>
 <!--    %d{HH:mm:ss.SSS}——日志输出时间-->
 <!--    %thread——输出日志的进程名字，这在Web应用以及异步任务处理中很有用-->
 <!--    %-5level——日志级别，并且使用5个字符靠左对齐-->
@@ -142,7 +142,7 @@
         <appender-ref ref="FILE-ERROR"/>
     </appender>
     <!--根日志-->
-    <root level="info">
+    <root level="debug">
         <appender-ref ref="STDOUT"/>
         <appender-ref ref="FILE-INFO-ASYNC"/>
         <appender-ref ref="FILE-WARN-ASYNC"/>

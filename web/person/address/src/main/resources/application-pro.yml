@@ -5,11 +5,11 @@ spring:
       strict: false
       datasource:
         master:
-          url: jdbc:mysql://mysql-master/information?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+          url: jdbc:mysql://192.168.92.128:3307/address?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
           username: root
           password: root
         slave:
-          url: jdbc:mysql://mysql-slave/information?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
+          url: jdbc:mysql://192.168.92.128:3308/address?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&useSSL=false
           username: root
           password: root
 

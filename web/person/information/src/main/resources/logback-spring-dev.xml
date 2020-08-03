@@ -14,7 +14,7 @@
             FILE-ERROR:对应error级别,包含错误信息
     -->
     <contextName>information</contextName>
-    <property name="LOG_PATH" value="F:/千锋/part3/week3/logs/information"/>
+    <property name="LOG_PATH" value="F:/千锋/part3/week3/springboot整合/logs/information"/>
 <!--    %d{HH:mm:ss.SSS}——日志输出时间-->
 <!--    %thread——输出日志的进程名字，这在Web应用以及异步任务处理中很有用-->
 <!--    %-5level——日志级别，并且使用5个字符靠左对齐-->

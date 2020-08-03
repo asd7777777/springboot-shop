@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.feng.pay.mapper.CardMapper">
+  <resultMap id="BaseResultMap" type="com.feng.pay.domain.entity.Card">
+    <!--@mbg.generated-->
+    <!--@Table card-->
+    <id column="cid" jdbcType="INTEGER" property="cid" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="identity_id" jdbcType="BIGINT" property="identityId" />
+    <result column="bank_card_id" jdbcType="BIGINT" property="bankCardId" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="quick_pay" jdbcType="INTEGER" property="quickPay" />
+    <result column="card_type" jdbcType="INTEGER" property="cardType" />
+    <result column="id_del" jdbcType="INTEGER" property="idDel" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    cid, user_id, real_name, identity_id, bank_card_id, bank_name, phone, quick_pay, 
+    card_type, id_del, create_time, update_time
+  </sql>
+</mapper>

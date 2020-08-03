@@ -36,6 +36,10 @@ public enum RespCode {
     /* 业务错误 */
     /* 业务繁忙 请稍后在试 */
     BUSINESS_UNKNOW_ERROR(30001, " busy with business", "业务繁忙 请稍后在试"),
+
+    EMPTY_CARDS(30002,"no binding card", "该用户没有绑定的银行卡"),
+    EXIST_CARD(30003,"this card existed", "该卡已被绑定"),
+
     SYSTEM_ERROR(99999, "system  error", "接口错误"),
     /* ======系统错误：40001-49999===== */
     /* 提示语 "系统繁忙，请稍后重试"*/
@@ -52,6 +56,7 @@ public enum RespCode {
     NO_FOUND_ERROR(50004, "no found error", "接口地址无效"),
     /* 数据错误 */
     DATA_IS_WRONG(60001, "data is wrong", "数据错误");
+
 
 
     /**

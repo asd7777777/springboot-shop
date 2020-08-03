@@ -1,9 +1,5 @@
 package com.feng.address.domain.dto;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiParam;
 import lombok.Data;
@@ -13,7 +9,6 @@ import javax.validation.constraints.Pattern;
 
 @Data
 @ApiModel("地址参数")
-@Validated
 public class AddressDto {
     /**
      * 收件人姓名
@@ -22,7 +17,7 @@ public class AddressDto {
     private String addresseeName;
 
     @ApiParam("手机号码")
-    @Pattern(regexp = "\\d{11}", message = "手机号码输入错误")
+    @Pattern(regexp = "^1[3-9]\\d{9}$", message = "手机号码输入错误")
     private String phone;
 
     /**
