@@ -22,7 +22,7 @@
         <mp.starter.version>3.2.0</mp.starter.version>
         <dynamic.datasource.starter.version>3.1.1</dynamic.datasource.starter.version>
         <fastjson.version>1.2.70</fastjson.version>
-        <swagger.version>2.9.2</swagger.version>
+        <swagger.version>2.10.0</swagger.version>
         <swagger.bootstrap.version>1.9.6</swagger.bootstrap.version>
     </properties>
 
